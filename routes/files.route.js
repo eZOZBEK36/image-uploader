@@ -23,7 +23,7 @@ router.post('/upload', async (req, res) => {
 		const fileName = `photo-${randomInt(1000000, 9999999)}-${randomInt(10000, 99999)}-${randomInt(10000000, 99999999)}${extname(file.name)}`
 
 		const fileDatas = await new File({
-			imageUrl: `http://${req.hostname}:${PORT}/${fileName}`,
+			imageUrl: `https://${req.hostname}/${fileName}`,
 			imageExt: extname(file.name)
 		})
 
