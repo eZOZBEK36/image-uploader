@@ -16,7 +16,7 @@
 		"request-progress": "^3.0.0"
 	},
 	"engines": {
-		"node": ">=16.13.1"
+		"node": ">=16.x"
 	},
 	"repository": {
 		"type": "git",
